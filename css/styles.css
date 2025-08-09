@@ -54,9 +54,15 @@ body {
 
 
 .navbar .logo {
-  height: 50px; /* controla o tamanho da imagem */
-  object-fit: contain;
+  /* deixa a imagem redonda e responsiva */
+  width: 60px;            /* tamanho padrão */
+  height: 60px;           /* manter quadrado para virar círculo */
+  border-radius: 50%;     /* transforma em círculo */
+  object-fit: cover;      /* recorta sem distorcer */
+  display: block;
 }
+
+
 
 .navbar ul {
   display: flex;
